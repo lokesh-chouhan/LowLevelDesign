@@ -25,3 +25,13 @@ classDiagram
           +bool is_wild
           +run()
       }
+
+
+
+  ```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+  ```
