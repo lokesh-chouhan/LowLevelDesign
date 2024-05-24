@@ -19,6 +19,7 @@ classDiagram
     String:-motherName
     String:-age
     String:-bloodGroup
+    Student(StudentBuilder)
 
   }
 
@@ -28,8 +29,23 @@ classDiagram
     String:-motherName
     String:-age
     String:-bloodGroup
+
+    StudentBuilder:+setName(String)
+    StudentBuilder:+setFatherName(String)
+    StudentBuilder:+setMotherName(String)
+    StudentBuilder:+setAge(String)
+    StudentBuilder:+setBloodGroup(String)
+    Student:+build()
   
   }
+
+  class IStudentBuilder{
+    <<interface>>
+    Student:+build()
+  }
+
+StudentBuilder --> Student
+StudentBuilder --|> IStudentBuilder
   
 
 ```
