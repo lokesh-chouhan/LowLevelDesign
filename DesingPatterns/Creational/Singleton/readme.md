@@ -1,4 +1,6 @@
-Singleton need three steps
+#Singleton
+
+##Steps to create singleton
 
 1. Create private constructor to avoid getting used out of class.
 2. Create static reference of same class
