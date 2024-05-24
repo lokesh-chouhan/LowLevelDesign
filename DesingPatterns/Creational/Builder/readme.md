@@ -44,8 +44,8 @@ classDiagram
     Student:+build()
   }
 
-StudentBuilder --> Student
-StudentBuilder --|> IStudentBuilder
+StudentBuilder --> Student : uses
+StudentBuilder ..|> IStudentBuilder : implements
   
 
 ```
