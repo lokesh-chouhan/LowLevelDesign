@@ -8,6 +8,7 @@ Singleton need three steps
 
 classDiagram
     class MySingleton{
+        MySingleton:-mySingleton$
         -MySingleton()
         MySingleton:+getMySingleton()$
     }
