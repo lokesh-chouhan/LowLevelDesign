@@ -4,34 +4,17 @@ Singleton need three steps
 2. Create static reference of same class
 3. Create static method to get instance (synchronized for thread safe)
 
+```mermaid
+
 classDiagram
-      Animal <|-- Duck
-      Animal <|-- Fish
-      Animal <|-- Zebra
-      Animal : +int age
-      Animal : +String gender
-      Animal: +isMammal()
-      Animal: +mate()
-      class Duck{
-          +String beakColor
-          +swim()
-          +quack()
-      }
-      class Fish{
-          -int sizeInFeet
-          -canEat()
-      }
-      class Zebra{
-          +bool is_wild
-          +run()
-      }
+    class MySingleton{
+        -MySingleton()
+        MySingleton:+getMySingleton()$
+    }
+
+    MySingleton --> MySingleton
+
+```
 
 
 
-  ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-  ```
