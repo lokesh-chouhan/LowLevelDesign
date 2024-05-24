@@ -10,9 +10,9 @@
 
 classDiagram
     class MySingleton{
-        MySingleton:-mySingleton$
+        -mySingleton:MySingleton$
         -MySingleton()
-        MySingleton:+getMySingleton()$
+        +getMySingleton():MySingleton$
     }
 
     MySingleton --> MySingleton
